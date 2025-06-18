@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+📌 Job Application Tracker (Mini CRM)
+🎯 Objective
+A lightweight CRM-style system that helps users efficiently track and manage their job applications. This app supports core features like job tracking, filtering, real-time notifications, and user authentication, offering both applicants and admins the tools to stay organized during the job hunt.
 
-## Project info
+🧩 Core Features
+🔐 User Authentication
+Secure login/signup using JWT.
 
-**URL**: https://lovable.dev/projects/b9de0a16-e056-4e7b-bb48-73f53d6e9bec
+Two user roles:
 
-## How can I edit this code?
+Applicant Panel – Manage personal job applications.
 
-There are several ways of editing your application.
+Admin Panel (optional) – View and manage all user data (admin privileges).
 
-**Use Lovable**
+📝 Job Entry CRUD
+Create and manage job applications with the following fields:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b9de0a16-e056-4e7b-bb48-73f53d6e9bec) and start prompting.
+Company, Role, Status, Applied Date, Notes
 
-Changes made via Lovable will be committed automatically to this repo.
+Application status options:
 
-**Use your preferred IDE**
+Applied, Interview, Offer, Rejected, Accepted
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Full CRUD support:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Add, edit, delete, and view application details.
 
-Follow these steps:
+📋 List View with Filters
+View all job applications in a list or card format.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Filter applications by status.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Sort applications by applied date.
 
-# Step 3: Install the necessary dependencies.
-npm i
+🛠 Backend
+RESTful API for all core operations (built with Node.js/Express or similar).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Database support:
+
+PostgreSQL or MongoDB for storing application data.
+
+💻 Frontend
+Responsive user interface with a clean and intuitive design.
+
+Job entry forms with input validation (required fields, date formats, etc.).
+
+Displays job applications using cards or tables for easy readability.
+
+🔔 Real-Time Notifications
+Get notified in real-time (email or in-app panel) on job status changes or updates.
+
+🚀 Getting Started
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/job-application-tracker.git
+cd job-application-tracker
+Install backend dependencies:
+
+bash
+Copy
+Edit
+cd backend
+npm install
+Configure .env for backend (DB credentials, JWT secret, etc.).
+
+Install frontend dependencies:
+
+bash
+Copy
+Edit
+cd frontend
+npm install
+Run both servers:
+
+bash
+Copy
+Edit
+# Backend
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+# Frontend (in a new terminal)
+npm start
+🔧 Tech Stack
+Frontend: React / Vue / Angular (choose one)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Backend: Node.js + Express
 
-**Use GitHub Codespaces**
+Database: PostgreSQL or MongoDB
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Authentication: JWT
 
-## What technologies are used for this project?
+Notifications: Nodemailer / Socket.io (for real-time features)
 
-This project is built with:
+✅ Future Improvements
+Admin analytics dashboard
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Export job application data
 
-## How can I deploy this project?
+Job reminder notifications
 
-Simply open [Lovable](https://lovable.dev/projects/b9de0a16-e056-4e7b-bb48-73f53d6e9bec) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+OAuth (Google/LinkedIn) login support
