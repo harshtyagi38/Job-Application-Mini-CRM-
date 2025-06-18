@@ -48,20 +48,6 @@ Displays job applications using cards or tables for easy readability.
 
 🔔 Real-Time Notifications
 Get notified in real-time (email or in-app panel) on job status changes or updates.
-
-🚀 Getting Started
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/job-application-tracker.git
-cd job-application-tracker
-Install backend dependencies:
-
-bash
-Copy
-Edit
 cd backend
 npm install
 Configure .env for backend (DB credentials, JWT secret, etc.).
